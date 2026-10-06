@@ -1,0 +1,37 @@
+.export-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.export-actions .download-button {
+  margin-top: 0;
+}
+
+.export-model-button {
+  background: #fff;
+  color: #245f61;
+  border: 1px solid #9cb8ae;
+}
+
+.export-model-button:hover {
+  background: #f0f7f4;
+}
+
+.export-model-button:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.export-status {
+  min-height: 16px;
+  color: #5d706a;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .export-actions { margin-top: 4px; }
+  .export-actions .download-button { min-height: 36px; }
+}
